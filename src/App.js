@@ -21,11 +21,11 @@ function App() {
               placeholder="password"
               className="input-text"
             />
-            <button
+            <input
               type="submit"
               className="cursor-pointer font-poppins rounded-full px-5 py-1 bg-white bg-opacity-50 hover:bg-white hover:bg-opacity-80 "
-              onSubmit={click}
-            ></button>
+              onClick={click}
+            />
           </form>
         </div>
       </Tilt>
