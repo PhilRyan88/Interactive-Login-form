@@ -2,8 +2,8 @@ import "./App.css";
 import Tilt from "react-parallax-tilt";
 
 function App() {
-  const click = (event) => {
-    e.preventDefault;
+  const click = (e) => {
+    e.preventDefault();
   };
   return (
     <div className="App bg-blue-900 h-screen w-screen relative overflow-hidden flex justify-center items-center">
@@ -22,8 +22,9 @@ function App() {
               className="input-text"
             />
             <input
-              type="Submit"
+              type="click"
               className="cursor-pointer font-poppins rounded-full px-5 py-1 bg-white bg-opacity-50 hover:bg-white hover:bg-opacity-80 "
+              onSubmit={click}
             />
           </form>
         </div>
